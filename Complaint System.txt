@@ -1,0 +1,33 @@
+--------------------------------------------------------------xxxxxxxxxxxxxxxxxxxxxxxx---------------------------------------------------------------
+
+							     COMPLAINT REDRESSAL SYSTEM
+
+COMPLAINT:
+
+1. There are a total of 10 pincodes which are used for this project. These are 700101,700102,.....700110. All complaints should be having any of the above mentioned pincodes.
+
+ADMIN:
+
+1. Admin can VIEW All Users.
+2. Admin can ADD, UPDATE, DELETE a manager. Admin can VIEW All Managers.
+3. Admin can ADD, UPDATE, DELETE an engineer. Admin can VIEW All Engineers.
+
+MANAGER:
+
+1. There are a total of 10 Managers. Each manager is allotted tickets based on the pincode. For example, Manager 'A' handles only pincode 700101. So, all the tickets that have pincode 700101 will be handled by Manager 'A'. Likewise, it is for other Managers as well.
+
+2. Managers can Assign tickets to engineers. 
+
+3. Managers can view All Tickets of all pincodes.
+
+ENGINEER:
+
+1. There are a total of 10 Engineers. Just like managers, Each engineer is assigned tickets based on the pincode. For example, Engineer 'A' handles only pincode 700101. So, all the tickets that have pincode 700101 will be handled by Engineer 'A'. Likewise, it is for other Engineers as well.
+
+2. Engineers can Resolve the tickets which have been assigned to them by their respective Managers.
+
+USER:
+
+1. User can Register and Login.
+
+2. User can VIEW the tickets and also Raise a ticket.
