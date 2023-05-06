@@ -1,0 +1,25 @@
+<div class="container">
+    <h3 class="text-center">Add Engineer</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" id="name"  placeholder="Enter name" [(ngModel)]="engineer.name">
+        </div>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" name="email" id="email"  placeholder="Enter email" [(ngModel)]="engineer.email">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Password" [(ngModel)]="engineer.password">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"  placeholder="Enter Phone Number" [(ngModel)]="engineer.phoneNumber">
+        </div><br>
+        <div class="text-center">
+        <button class="btn btn-danger">Submit</button><br><br>
+        </div>
+      </form>
+      <a routerLink="/adminhome" class="btn btn-secondary">Back</a>
+</div>

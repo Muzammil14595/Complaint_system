@@ -1,0 +1,74 @@
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img
+                    src="https://www.developmentaid.org/files/organizationLogos/abc-telecomm-co-ltd-238314.jpg"
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">Welcome to ABC Telecom Ltd.</h4>
+                </div>
+
+                <form (ngSubmit)="onSubmit()">
+                  <p>Please login to your account</p>
+
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email"
+                      placeholder="Enter Email" class="form-control"
+                      [(ngModel)]="user.email">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password"
+                      placeholder="Enter password" class="form-control"
+                      [(ngModel)]="user.password">
+                  </div>
+                  <br>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg
+                      gradient-custom-2 mb-3">Login</button>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center
+                    pb-4">
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <a routerLink="/register" class="btn btn-outline-danger">Register</a><br>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">We are more than just a company</h4>
+                <p class="small mb-0">ABC Telecom Ltd. is a leading
+                  telecommunication company globally. Headquartered in New
+                  Delhi, we are the most trusted provider of ICT services with a
+                  global network across the USA, Europe, Africa, Middle East,
+                  Asia-Pacific, India, and SAARC regions. Airtel
+                  Telecommunications ranks amongst the top 3 mobile service
+                  providers around the world (as per subscribers)
+
+                  Through the diverse product portfolio and strategically
+                  located submarine cables and satellite network running across
+                  365,000+ RKMs in 50 countries and 5 continents, we are pushing
+                  the boundaries in digital service delivery with a key focus on
+                  enhanced end-user experience, round-the-clock infrastructure
+                  availability, and superior service quality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

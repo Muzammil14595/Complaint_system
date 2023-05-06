@@ -1,0 +1,103 @@
+<!-- <div class="bg-image"
+    style="background-image:
+    url('http://source.unsplash.com/1600x900/?white,snow');
+    height: 100vh"> -->
+<div class="container">
+    <h1 class="text-center">All Tickets</h1><br>
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>ID</th><th>NAME</th><th>ADDRESS</th><th>CITY</th><th>PINCODE</th><th>PHONE
+                    NUMBER</th><th>PROBLEM
+                    DESCRIPTION</th><th>STATUS</th><th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let complaint of complaints">
+                <td>{{complaint.id}}</td>
+                <td>{{complaint.userName}}</td>
+                <td>{{complaint.userAddress}}</td>
+                <td>{{complaint.userCity}}</td>
+                <td>{{complaint.userPincode}}</td>
+                <td>{{complaint.userNumber}}</td>
+                <td>{{complaint.problemDescription}}</td>
+                <div *ngIf="complaint.status==false; else templateName">
+                    <td>
+                        Raised
+                    </td>
+                </div>
+
+                <ng-template #templateName>
+                    <td>
+                        Closed
+                    </td>
+                </ng-template>
+                <td>
+                    <a routerLink="/engineerA" class="btn btn-success">Assign Engineer</a>
+                   
+
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        >
+                        Assign Engineer
+                    </button> -->
+                </td>
+            </tr>
+        </tbody>
+    </table><br><br>
+
+</div>
+<!-- </div> -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal Body -->
+                <form>
+
+                    <!-- Name input -->
+
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input type="text" name="userName" id="userName"
+                            class="form-control"
+                            [(ngModel)]="modalComplaint.userName">
+                    </div>
+
+                    <!-- Name input -->
+
+                    <div class="form-group">
+                        <label>User Pincode</label>
+                        <input type="text" name="userPincode" id="userPincode"
+                            class="form-control"
+                            [(ngModel)]="modalComplaint.userPincode">
+                    </div>
+
+                    <!-- Problem Description input -->
+
+                    <div class="form-group">
+                        <label>Problem Description</label>
+                        <input type="text" name="problemDescription"
+                            id="problemDescription"
+                            class="form-control"
+                            [(ngModel)]="modalComplaint.problemDescription">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

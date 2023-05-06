@@ -1,0 +1,33 @@
+<div class="container">
+
+    <h2 class="text-center">Update Engineer</h2><br>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" id="name"
+                placeholder="Enter new name" class="form-control"
+                [(ngModel)]="engineer.name"><br>
+        </div>
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" id="email"
+                placeholder="Enter new email" class="form-control"
+                [(ngModel)]="engineer.email"><br>
+        </div>
+        <div class="form-group">
+            <label>Paswword</label>
+            <input type="text" name="password" id="password"
+                placeholder="Enter new password" class="form-control"
+                [(ngModel)]="engineer.password"><br>
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" name="phoneNumber" id="phoneNumber"
+                placeholder="Enter Phone Number" class="form-control"
+                [(ngModel)]="engineer.phoneNumber">
+        </div><br>
+        <div class="text-center">
+        <button class="btn btn-info">Update</button>
+        </div>
+    </form>
+</div>

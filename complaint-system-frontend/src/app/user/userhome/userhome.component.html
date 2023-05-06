@@ -1,0 +1,61 @@
+<h2 class="text-center">Raise a Ticket</h2><br>
+<div class="container">
+    <form (ngSubmit)="onSubmit()">
+
+        <!-- Name input -->
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" id="name"
+            placeholder="Enter Name" class="form-control"
+            [(ngModel)]="complaint.userName">
+        </div>
+
+        <!-- Problem Description input -->
+
+        <div class="form-group">
+          <label>Problem Description</label>
+          <input type="text" name="problemDescription" id="problemDescription"
+            placeholder="Enter problem description" class="form-control"
+            [(ngModel)]="complaint.problemDescription">
+        </div>
+
+        <!-- Phone Number input -->
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="text" name="phoneNumber" id="phoneNumber"
+            placeholder="Enter phone number" class="form-control"
+            [(ngModel)]="complaint.userNumber">
+        </div>
+
+        <!-- Address input -->
+
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" name="address" id="address"
+            placeholder="Enter address" class="form-control"
+            [(ngModel)]="complaint.userAddress">
+        </div>
+        
+        <!-- City input -->
+
+        <div class="form-group">
+          <label>City</label>
+          <input type="text" name="city" id="city"
+            placeholder="Enter city" class="form-control"
+            [(ngModel)]="complaint.userCity">
+        </div>
+        
+        <div class="form-group">
+          <label>Pincode</label>
+          <input type="text" name="pincode" id="pincode"
+            placeholder="Enter pincode" class="form-control"
+            [(ngModel)]="complaint.userPincode">
+        </div><br>
+        
+        <div class="text-center pt-1 mb-5 pb-1">
+          <button class="btn btn-success mx-2">Submit</button>
+        </div>
+    </form>
+</div>
